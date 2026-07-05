@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEXT GEN | Global IT Solutions</title>
+    <style>
+        :root {
+            --primary: #00d4ff;
+            --aws-orange: #ff9900;
+            --dark: #0f172a;
+            --secondary: #1e293b;
+            --text: #f8fafc;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: var(--dark);
+            color: var(--text);
+            margin: 0;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.85)),
+                url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            text-align: center;
+        }
+
+        .hero-title {
+            font-size: 5rem;
+            letter-spacing: 10px;
+            margin-bottom: 10px;
+            color: var(--primary);
+        }
+
+        .leadership {
+            display: flex;
+            gap: 50px;
+            margin-top: 30px;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px 40px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        /* --- New: International Partners Section --- */
+        .partners-bar {
+            background: var(--secondary);
+            padding: 40px 0;
+            overflow: hidden;
+            white-space: nowrap;
+            border-top: 1px solid var(--primary);
+            border-bottom: 1px solid var(--primary);
+        }
+
+        .partners-track {
+            display: inline-block;
+            animation: scroll 20s linear infinite;
+        }
+
+        .partner-item {
+            display: inline-block;
+            margin: 0 40px;
+            font-weight: bold;
+            font-size: 1.2rem;
+            color: rgba(255, 255, 255, 0.6);
+            text-transform: uppercase;
+        }
+
+        @keyframes scroll {
+            from {
+                transform: translateX(0);
+            }
+
+            to {
+                transform: translateX(-50%);
+            }
+        }
+
+        /* --- Services Section --- */
+        .services-section {
+            padding: 80px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .service-card {
+            background: var(--secondary);
+            padding: 30px;
+            border-radius: 10px;
+            transition: 0.3s;
+            border: 1px solid #334155;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--primary);
+        }
+
+        /* Highlight AWS Card */
+        .aws-highlight {
+            border: 2px solid var(--aws-orange) !important;
+            background: linear-gradient(145deg, #1e293b, #0f172a);
+        }
+
+        .aws-label {
+            color: var(--aws-orange);
+            font-weight: bold;
+            font-size: 0.8rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 50px;
+            background: #020617;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 class="hero-title">NEXT GEN</h1>
+        <p>A Global IT Conglomerate</p>
+
+        <div class="leadership">
+            <div class="leader-box">
+                <h3>Mr. DHRUV PRAJAPATI</h3>
+                <p>Founder, Owner & CEO</p>
+            </div>
+            <div style="width: 2px; background: rgba(255,255,255,0.2);"></div>
+            <div class="leader-box">
+                <h3>Mr. AYUSH SUTHAR</h3>
+                <p>Director</p>
+            </div>
+        </div>
+    </header>
+    <div class="partners-bar">
+        <div class="partners-track">
+            <span class="partner-item">Microsoft Gold Partner</span>
+            <span class="partner-item">Google Cloud Alliance</span>
+            <span class="partner-item">IBM Strategic Node</span>
+            <span class="partner-item">Cisco Security Network</span>
+            <span class="partner-item">Oracle Enterprise</span>
+            <span class="partner-item">Intel Hardware Sync</span>
+            <span class="partner-item">Microsoft Gold Partner</span>
+            <span class="partner-item">Google Cloud Alliance</span>
+            <span class="partner-item">IBM Strategic Node</span>
+            <span class="partner-item">Cisco Security Network</span>
+        </div>
+    </div>
+    <section class="services-section">
+        <center>
+            <h2 style="font-size: 2.5rem; margin-bottom: 50px;">Our Comprehensive IT Ecosystem</h2>
+        </center>
+
+        <div class="services-grid">
+            <div class="service-card aws-highlight">
+                <span class="aws-label">PREMIUM PARTNER</span>
+                <h3>AWS Cloud Solutions</h3>
+                <p>Expert-level Amazon Web Services integration. We handle EC2 deployment, S3 storage architecture, and
+                    Serverless computing for global scalability.</p>
+            </div>
+            <div class="service-card">
+                <h3>Global Web Development</h3>
+                <p>Full-stack architectural solutions for international e-commerce and enterprise portals.</p>
+            </div>
+            <div class="service-card">
+                <h3>App Development</h3>
+                <p>Cross-platform mobile engineering with seamless API integrations for global users.</p>
+            </div>
+            <div class="service-card">
+                <h3>Cybersecurity & Defense</h3>
+                <p>Military-grade encryption and 24/7 Security Operations Center (SOC) monitoring.</p>
+            </div>
+            <div class="service-card">
+                <h3>DevOps & Deployment</h3>
+                <p>Automated CI/CD pipelines ensuring zero-downtime deployments for massive infrastructures.</p>
+            </div>
+            <div class="service-card">
+                <h3>AI Engineering</h3>
+                <p>Custom Neural Networks and Large Language Model (LLM) implementations for business automation.</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2026 NEXT GEN IT Solutions | Globally Focused | Led by Dhruv Prajapati & Ayush Suthar</p>
+    </footer>
+</body>
+
+</html>
